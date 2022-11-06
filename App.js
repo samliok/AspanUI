@@ -11,6 +11,8 @@ import DashboardView from "./views/dashboard/view";
 import { getBlock } from "./contracts/withdraw";
 import DepositView from "./views/details/deposit";
 
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+
 export default function App() {
   async function fetchJSONAsync() {
     await getBlock();
@@ -41,8 +43,13 @@ export default function App() {
     setIsOnDashboard(true);
   };
 
+  const client = new ApolloClient({
+    uri: "https://api.thegraph.com/subgraphs/name/keinberger/aspan",
+    cache: new InMemoryCache(),
+  });
+
   return (
-    <>
+    <ApolloProvider client={client}>
       {isSelectingAccount && (
         <View style={styles.container}>
           {isSelectingAccount && (
@@ -87,7 +94,7 @@ export default function App() {
           />
         </View>
       )}
-    </>
+    </ApolloProvider>
   );
 }
 
