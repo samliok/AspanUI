@@ -46,7 +46,8 @@ const DetailsView = (props) => {
               }}
               variant="displayLarge"
             >
-              {account.description}
+              For savers seeking low APY volatility and the least risk of losing
+              their initial deposit.
             </Text>
           </View>
           <View style={styles.group}>

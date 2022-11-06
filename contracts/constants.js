@@ -4,7 +4,7 @@ exports.VALUT_ABI = [];
 exports.VAULT_ADDRESS = "temp value";
 
 exports.PRIVATE_KEY =
-  "ded63e20bc39904168ab4e4100f8da0a80a75a6e704b2a1953a7516880fbee8b";
+  "4bb6a5b1003da2eab5fde958503cdc39964c2076aff7a1c6d3eff8681757cff6";
 // vault contract abi
 exports.ORACLE_ABI = [
   {

@@ -56,12 +56,20 @@ const Account = (props) => {
         >
           {curr_account.description}
         </Text>
-
-        <IconButton
-          icon={curr_account.icon}
-          size={20}
-          color={curr_account.icon_color}
-        />
+        <View style={{ flexDirection: "row", alignItems: "center" }}>
+          <IconButton
+            icon={curr_account.icon}
+            size={20}
+            color={curr_account.icon_color}
+          />
+          <Text
+            style={{
+              fontSize: theme.text.paragraph,
+            }}
+          >
+            {curr_account.risk_description}
+          </Text>
+        </View>
       </View>
     </TouchableOpacity>
   );
