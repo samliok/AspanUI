@@ -729,12 +729,14 @@ const usdc_abi = [
 ];
 const price_oracle_address = "0xB2F1C1B3221C437Bfe59CcD5a9f9D8b2476E1760";
 const vault_address = "0x11a4905161E79a5d5bACbF7e4c72Cb57407E0e09";
+const affiliate_address = "0x2FA9B4f9A126b8E7B76666a24370D6087CbDeDDd";
 
 export const getCallData = async (sellAddress, buyAddress, amount) => {
   const params = {
     sellToken: sellAddress,
     buyToken: buyAddress,
     sellAmount: amount.toString(),
+    affiliateAddress: affiliate_address,
   };
   const searchParams = new URLSearchParams(params);
   const query = searchParams.toString();

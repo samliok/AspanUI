@@ -19,8 +19,7 @@ const DepositView = (props) => {
   const [inBalance, setInBalance] = useState(0);
   const deposit = async () => {
     // props.deposit()
-    // await approveETH();
-    props.deposit();
+    await approveETH();
   };
   return (
     <View style={styles.container}>
