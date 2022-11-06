@@ -11,16 +11,16 @@ import { Button, Divider } from "react-native-paper";
 
 import React, { useState, forwardRef } from "react";
 import { theme } from "../../themes";
-import { doContractThings } from "../../contracts/usdc_call";
+import { depositFunds, approveETH } from "../../contracts/deposit";
 const DepositView = (props) => {
   const account = props.account;
   const name = props.name;
   const [amount, setAmount] = useState(0);
   const [inBalance, setInBalance] = useState(0);
   const deposit = async () => {
-    console.log("yes");
     // props.deposit()
-    await doContractThings();
+    // await approveETH();
+    props.deposit();
   };
   return (
     <View style={styles.container}>

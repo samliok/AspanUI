@@ -7,6 +7,7 @@ var accounts = {
     market: "AAVE",
     icon_color: "green",
     icon: "chevron-down",
+    risk_description: "Low risk exposure",
     icon_desc: "Standard Checking",
     long_description:
       "An account for risk-conscious savers. Your deposit will be converted into the market assets above. Interest is earned from USD lending markets on the blockchain. You can withdraw into your initial deposit asset.",
@@ -24,6 +25,7 @@ var accounts = {
     market: "AAVE",
     icon_color: "#F9D14A",
     icon: "trending-neutral",
+    risk_description: "Less flexible, low risk exposure",
     icon_desc: "",
     isReady: false,
   },
@@ -36,6 +38,7 @@ var accounts = {
     icon_color: "red",
     icon: "chevron-up",
     icon_desc: "high risk exposure",
+    risk_description: "Higher volatility",
     isReady: false,
   },
 };

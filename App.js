@@ -18,9 +18,9 @@ export default function App() {
     await getBlock();
   }
   // could use navigators but this is most simple for now
-  const [isSelectingAccount, setIsSelectingAccount] = useState(false);
+  const [isSelectingAccount, setIsSelectingAccount] = useState(true);
   const [isAccountDetails, setIsAccountDetails] = useState(false);
-  const [isOnDeposit, setIsOnDeposit] = useState(true);
+  const [isOnDeposit, setIsOnDeposit] = useState(false);
   const [isOnDashboard, setIsOnDashboard] = useState(false);
   // temporary for now, can pass with navigation
   const temp_name = "Standard Savings";
